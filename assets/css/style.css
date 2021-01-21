@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+/* HEADER STYLES */
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 38px;
+    padding: 10px 10px 0px 30px;
+    text-align: center;
+    font-size: 6vw;
+    border-bottom: 2px solid black;
+}
+
+header nav {
+    margin: 20px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO STYLES */
+.hero {
+    background-image: url("../images/1.jpg");
+    height: 100px;
+    width: 100px;
+    
+  
+}
+
+.hero h2 {
+    padding: 350px 30px 0 0;
+    text-align: right;
+    font-size: 26px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* GENERAL SECTION STYLES */
+.section-title {
+    font-size: 34px;
+    text-align: right;
+    padding: 0 7px 90px 0;
+    border-right: 1px solid black;
+}
+
+/* ABOUT ME STYLES */
+#about-me {
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#about-me p {
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+/* MY WORK STYLES */
+#my-work {
+    padding: 35px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-work h3, h4 {
+    text-decoration: none;
+    color: black;
+}
+
+/* MY WORK GRID STYLES */
+.projects-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 0 20px 30px;
+}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 130px);
+    grid-template-rows: repeat(6, 65px);
+    width: 50%;
+    grid-gap: 5px; 
+}
+
+.projects-grid-container h4 {
+    font-weight: lighter;
+}
+
+.projects-grid-container a {
+    text-decoration: none;
+}
+
+.grid-title {
+    width: 50%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.projects-grid-item {
+    padding: 15px;
+}
+
+.grid-title.feature {
+    width: 25%;
+}
+
+.projects-grid-item.feature {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    background-image: url("../images/holiday\ planner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-grid-item.one {
+    grid-column: 5 / 7;
+    grid-row: 1 / 3;
+    background-image: url("../images/pro.png");
+    background-size: cover;
+    background-position:center;
+}
+
+.projects-grid-item.two {
+    grid-column: 5 / 7;
+    grid-row: 3 / 5;
+    background-image: url("../images/Quiz.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-grid-item.three {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+    background-image: url("../images/rfinder.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-grid-item.four {
+    grid-column: 3 / 5;
+    grid-row: 5 / 7;
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-grid-item:hover {
+    opacity: .3;
+}
+
+/* CONTACT ME STYLES */
+#contact-me {
+    padding: 35px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#contact-me h2 {
+    padding: 15px 7px;
+    margin: 5px 0;
+}
+
+#contact-me nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+#contact-me nav ul li a {
+    padding: 0px 30px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+
+}
+
+/* FOOTER STYLES */
+footer {
+    padding: 40px 10px;
+    background-color: salmon 0.5;
+}
+
+footer h2 {
+    font-size: 16px;
+}
+
+/*  MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+   
+    header h1 {
+      font-size: 6vw;
+      width: 100%;
+      text-align: center;
+    }
+   
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+   
+    header nav ul li a {
+      font-size: 20px;
+    }
+   
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+
+    #contact-me {
+      flex-wrap: nowrap;
+    }
+
+    #contact-me nav ul {
+      flex-wrap: nowrap;
+      justify-content: center;
+   }
+}
+   
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    #about-me p {
+        font-size: 24px;
+    }
+    header h1 {
+        font-size: 8vw;
+        width: 100%;
+        text-align: center;
+      }
+}
+
+@media only screen and (max-width: 600px) {}
